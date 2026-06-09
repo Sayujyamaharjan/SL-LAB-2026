@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- LAB 1 TOPIC 2026-06-09 -->
+    <!-- Embedding javascript with HTML performing certain calculation and pushing sourcecode to github sever using git -->
+    <!--
+    Introduction
+dfdgr
+    Objective 
+      1 to embed javascript code to html
+      2 to perform certain calculation using javascript operations
+      3 to push all the source code to github server using git 
+    
+    Description 
+
+    Conclusion
+      -->
+</head>
+
+<body>
+    <h1>Embedding JavaScript with HTML</h1>
+    <p>This is an example of how to embed JavaScript within an HTMl document</p>
+    <span id="message"></span> <br>
+    <span id="arithmetic"></span>
+    <ul id="dataList">
+
+    </ul>
+    <script>
+        console.log("Hello, this is a message from the JavaScript code embedded in the HTML document");
+
+        const messageElement = document.getElementById("message");
+
+        messageElement.textContent = "This message is displayed using JavaScript";
+
+
+        const markedPrice = 152.25;
+        const discount = 0.15;
+        const vatAmount = markedPrice * 0.05;
+        const discountAmount = markedPrice * discount;
+
+        const finalPrice = markedPrice - discountAmount + vatAmount;
+
+        console.log("Final Price After discount and vat: " + finalPrice.toFixed(2));
+
+        const calculatedAnswer = document.getElementById("arithmetic");
+
+        calculatedAnswer.textContent = "Final Price After Discount and VAT :" + finalPrice.toFixed(2
+
+        );
+    </script>
+    <script src="data.js"></script>
+
+</body>
+
+</html>
